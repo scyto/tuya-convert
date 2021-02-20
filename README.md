@@ -76,6 +76,13 @@ BE SURE THE FIRMWARE FITS YOUR DEVICE!
 	If you flashed the included ESPurna firmware file, the procedure will be very similar. The device will broadcast a `ESPURNA-XXXXXX` access point. You will have to connect to it using the default password: `fibonacci`. Once connected open the browser to 192.168.4.1 and follow the initial configuration instructions. Then go to the WIFI tab and configure your home WiFi connection (remember to save) or go to the ADMIN tab to upgrade the firmware to the device-specific image.
 
 ## USING DOCKER
+
+### Use prebuilt image ###
+
+`docker pull scyto/tuya-convert:latest` 
+
+### Build your own docker container ### 
+
 You may want to use a docker image instead. Advantage of this solution: You don't have to install anything on your host (except docker), everything goes into the docker image.
 Requirements:
 * Linux computer with a wifi adapter
