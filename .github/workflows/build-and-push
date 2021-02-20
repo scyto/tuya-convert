@@ -1,4 +1,4 @@
-name: build and push docker image
+name: build-and-push-docker-image
  
 on:
   push:
@@ -6,8 +6,6 @@ on:
     paths-ignore: #this ensures auto rebuilds don't occure when README.md is updated or the seperate workflow for updating descriptions and readme is modifies
         - 'README.md'
         - '.github/workflows/update-dockerhub-metadata.yml'
-  
-  
   pull_request:
     branches: [ master ]
     paths-ignore: #this ensures auto rebuilds don't occure when README.md is updated or the seperate workflow for updating descriptions and readme is modifies
