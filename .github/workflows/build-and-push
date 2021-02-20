@@ -1,4 +1,4 @@
-name: zwavejs2mqtt nightly build
+name: build and push docker image
  
 on:
   push:
