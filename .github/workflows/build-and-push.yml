@@ -43,7 +43,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          platforms: ${{ steps.buildx.outputs.name }}
+          platforms: ${{ steps.buildx.outputs.platforms }}
           tags: scyto/tuya-convert:latest #set to the dockerhub repo this will be pushed to
 
       - name: Image digest
