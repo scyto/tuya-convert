@@ -1,4 +1,4 @@
-FROM phusion/baseimage:master
+FROM debian:buster-slim
 
 RUN apt-get update && apt-get install -y sudo iproute2 iputils-ping
 
