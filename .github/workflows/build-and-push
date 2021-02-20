@@ -8,8 +8,6 @@ on:
         - 'README.md'
         - '.github/workflows/update-dockerhub-metadata.yml'
 
-
-
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
