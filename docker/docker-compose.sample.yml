@@ -1,9 +1,13 @@
-version: '3'
+version: '3.7'
 services:
   tuya:
-    image: tuya:latest
+    container_name: tuya-convert
+    image: scyto/tuya-convert:latest
     privileged: true
     network_mode: "host"
+    tty: true
+    stop_signal: SIGINT
+    stop_grace_period: 2s
     environment:
       - WLAN=wlan0
       - AP=vtrust-flash
