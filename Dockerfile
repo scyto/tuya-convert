@@ -8,5 +8,3 @@ RUN apt-get update \
 && echo '* libraries/restart-without-asking boolean true' | sudo debconf-set-selections \
 && cd /usr/bin/tuya-convert && ./install_prereq.sh \
 && mkdir -p /etc/service/tuya && cd /etc/service/tuya && ln -s /usr/bin/config.sh run
-
-ENTRYPOINT ["start", "tuya"]
