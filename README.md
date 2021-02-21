@@ -79,7 +79,10 @@ BE SURE THE FIRMWARE FITS YOUR DEVICE!
 
 ### Use prebuilt image ###
 
-`docker pull scyto/tuya-convert:latest` 
+* copy docker/docker-compose.sample.yml to your docker host as docker-compose.yml
+* the only env var you should need to change is the AP if your wifi adapter on the host is not wlan0
+* run `docker-compose run --rm --entrypoint start tuya` this will pull the image and start the app and cleanly remove the container at exit
+* NOTE: you must not have anything else running on port 80 on the host (e.g. web server or container exposed on port 80)
 
 ### Build your own docker container ### 
 
