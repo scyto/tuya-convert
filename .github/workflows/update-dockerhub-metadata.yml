@@ -20,7 +20,7 @@ jobs:
           DOCKER_USER: scyto
           DOCKER_PASS: ${{ secrets.DOCKERHUB_PASSWORD}} #this must be a password it can't be API token or personal toke due to issue with way API works
         with:
-          destination_container_repo: scyto/zwavejs2mqtt
+          destination_container_repo: scyto/tuya-converrt
           provider: dockerhub
           short_description: 'Multiarcitecture zwavejs2mscyto/zwavejs2mqtt (arm-v6,arm-v7,arm-64,i386,amd64,s390x,ppc64le)'
           readme_file: 'README.md'
